@@ -1,0 +1,45 @@
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  
+}
+
+.container {
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+  margin-top: -60px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  width: 900px;
+}
+
+.container div {
+  display: inline-block;
+  justify-content: flex-start;
+  vertical-align: top;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.container p {
+  margin: 0;
+}
+
+.ipAddress,
+.location,
+.timezone,
+.isp {
+  margin: 20px 0;
+  padding: 6px 30px 15px 30px !important;
+}
+
+p {
+  color: gray;
+  font-size: 10px;
+}
